@@ -22,8 +22,8 @@ $result = 0;
 <h1>Тест</h1>
 
 
-<form action="" method="POST">
-
+<form action="certificate.php" method="POST">
+  <input type="hidden" name="test-name" value="<?=$testName;?>">
   <p><b>Ваше имя:</b><br>
    <input type="text" name="userName">
   </p>
@@ -48,7 +48,6 @@ $result = 0;
                 $result++;
             }
         }
-        echo "<h2>Всего верных ответов ".$result."</h2>";
     }
 
 ?>
