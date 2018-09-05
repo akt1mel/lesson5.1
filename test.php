@@ -41,17 +41,6 @@ $result = 0;
 </form>
 
 
-<?php
-    if (isset($_POST['submit'])) {
-        foreach ($test as $key => $value) {
-            if($value['correct_answer'] == $_POST['answer'.$key]) {
-                $result++;
-            }
-        }
-    }
-
-?>
-
 <ul>
     <li><a href="admin.php">Загрузка теста</a></li>
     <li><a href="list.php">Список тестов</a></li>
